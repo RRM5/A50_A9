@@ -3334,11 +3334,11 @@
 		                     546000    90   95   1  1539000 1326000       0
 		                     455000    90   95   1   676000  702000       0
 		                     385000    85   95   1   546000  598000       0
-		                     338000    70   90   1   419000  403000       0
-		                     260000    70   90   1   419000  403000       0 >;
+		                     338000    70   90   1   400000  405000       0
+		                     260000    70   90   1   400000  405000       0 >;
 		gpu_sustainable_info = <0 0 0 0 0>;
 		gpu_pmqos_cpu_cluster_num = <2>;
-		gpu_pmu_status_reg_offset = <0x4064>;
+		gpu_pmu_status_reg_offsepllin = <0x4064>;
 		gpu_pmu_status_local_pwr_mask = <0xF>; /*0x1 << 0*/
 		gpu_max_clock = <1053000>;
 		gpu_max_clock_limit = <1053000>;
@@ -3348,9 +3348,9 @@
 		gpu_default_voltage = <800000>;
 		gpu_cold_minimum_vol = <0>;
 		gpu_voltage_offset_margin = <37500>;
-		gpu_tmu_control = <1>;
-		gpu_temp_throttling_level_num = <6>;
-		gpu_temp_throttling = <764000 572000 455000 338000 260000 260000>;
+		gpu_tmu_control = <0>;
+		gpu_temp_throttling_level_num = <10>;
+		gpu_temp_throttling = <1053000 949000 839000 764000 683000 572000 546000 455000 385000 338000>;
 		gpu_power_coeff = <625>;
 		gpu_dvfs_time_interval = <5>; /*1 tick : 10ms*/
 		gpu_default_wakeup_lock = <1>;
@@ -3361,11 +3361,11 @@
 		gpu_inter_frame_pm = <0>;
 		gpu_perf_gathering = <0>;
 		gpu_runtime_pm_delay_time = <50>;
-		gpu_dvfs_polling_time = <30>;
+		gpu_dvfs_polling_time = <25>;
 		gpu_pmqos_int_disable = <1>;
 		gpu_pmqos_mif_max_clock = <2093000>;
-		gpu_pmqos_mif_max_clock_base = <546000>;
-		gpu_cl_dvfs_start_base = <546000>;
+		gpu_pmqos_mif_max_clock_base = <1053000>;
+		gpu_cl_dvfs_start_base = <338000>;
 		gpu_debug_level = <3>; /*DEBUG(1) INFO(2) WARNING(3) ERROR(4)*/
 		gpu_trace_level = <8>; /*TRACE_ALL*/
 		gpu_bts_support = <1>;
